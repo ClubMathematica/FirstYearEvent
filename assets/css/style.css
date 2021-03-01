@@ -745,7 +745,7 @@ section {
     padding: 8px 28px;
     border-radius: 4px;
     transition: 0.5s;
-/*    margin-top: 10px;
+    /*    margin-top: 10px;
     margin-right:10px;*/
     border: 1px solid #fff;
     color: #fff;
@@ -766,7 +766,7 @@ section {
     padding: 8px 28px;
     border-radius: 4px;
     transition: 0.5s;
-/*    margin-top: 10px;*/
+    /*    margin-top: 10px;*/
     background: #5cb85c;
     border: 1px solid #5cb85c;
     color: white;
@@ -781,11 +781,34 @@ section {
     font-weight: 400;
 }
 
+.poster img {
+    width: 70%;
+}
+
 @media (max-width:300px) {
     .cta .cta-btn {
         border: 1px solid rgb(0, 0, 0, 0.2);
     }
+
+    .poster img {
+        width: 90%;
+    }
 }
+
+/*--------------------------------------------------------------
+# Card
+--------------------------------------------------------------*/
+.card {
+    border:none;
+    transition: .5s transform cubic-bezier(.155, 1.105, .295, 1.12), .5s box-shadow, .5s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
 
 /*--------------------------------------------------------------
 # Portfolio
