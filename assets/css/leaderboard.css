@@ -74,6 +74,8 @@ Leaderboard
 .leaderboard h1 {
     display: inline-block;
   font-size: 18px;
+  position: relative;
+  top: 5px;
   color: #e1e1e1;
   padding: 12px 0px 18px;
 }
@@ -81,6 +83,7 @@ Leaderboard
   width: 25px;
   height: 26px;
   position: relative;
+  margin-left: 15px;
   top: 3px;
   margin-right: 6px;
   vertical-align: baseline;
@@ -315,6 +318,8 @@ border-bottom: 8px solid #d18800;
 }
 .medal-icons{
   justify-self: end;
+  position: relative;
+  left: 10px;
 }
 .medal-icons-gold{
   justify-self: end;
