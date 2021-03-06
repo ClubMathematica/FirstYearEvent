@@ -7,12 +7,15 @@ Body
   box-sizing: border-box;
 }
 
+
 .leaderboard-section {
   height: 45em;
-  background: radial-gradient(ellipse farthest-corner at center top, #585858 0%, #be9852 100%);
+  /*background: radial-gradient(ellipse farthest-corner at center top, #585858 0%, #be9852 100%);*/
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/block-bg.png") fixed center center;
   color: #fff;
-  font-family: "Open Sans", sans-serif;
-  min-height: 700px;
+  font-family: "Raleway", sans-serif;
+  min-height: 620px;
+  padding:10px;
 }
 
 .event-leaderboard-heading{
@@ -61,10 +64,11 @@ Leaderboard
 }
 @media screen and (max-width: 600px){
   .leaderboard-section{
-    height: 40em;
+    height: 30em;
+      padding:5px;
   }
     .leaderboard{
-        width: 100%;
+        width: 90%;
     }
 }
 .leaderboard h1 {
@@ -330,6 +334,9 @@ border-bottom: 8px solid #d18800;
   .medal-icons-gold, .medal-icons-silver, .medal-icons{
     visibility: hidden;
   }
+}
+#event-title{
+   font-family: 'Ruda', sans-serif;
 }
 
 
