@@ -422,6 +422,20 @@
               c0-1.097,0.908-1.99,2.024-1.99c1.117,0,2.025,0.893,2.025,1.99C23.241,6.246,22.333,7.138,21.215,7.138z" />
                 </symbol>
             </svg>
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+              let elements = []
+              let container = document.querySelector('ol')
+              // Add each row to the array
+              container.querySelectorAll('li').forEach(el => elements.push(el))
+              // Clear the container
+              container.innerHTML = ''
+              // Sort the array from highest to lowest
+              elements.sort((a, b) => b.querySelector('.score').textContent - a.querySelector('.score').textContent)
+              // Put the elements back into the container
+              elements.forEach(e => container.appendChild(e))
+            })
+              </script>
         </section>
         <!-- Leader Board Section -->
         <!-- AV Leader Board -->
