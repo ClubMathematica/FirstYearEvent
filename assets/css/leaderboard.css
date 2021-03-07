@@ -11,7 +11,7 @@ Body
 .leaderboard-section {
   height: 47em;
   /*background: radial-gradient(ellipse farthest-corner at center top, #585858 0%, #be9852 100%);*/
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/leaderboard_background.png") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/leaderboard_background.jpg") fixed center center;
   color: #fff;
   font-family: "Raleway", sans-serif;
   min-height: 620px;
