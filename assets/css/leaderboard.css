@@ -48,7 +48,7 @@ Leaderboard
   transform: translate(-50%, -50%);
   width: 80%;
   height: auto;
-  background: linear-gradient(to bottom, #181c26, #ffb429);
+  background: linear-gradient(to bottom, #181c26, #ffb938);
   border-radius: 10px;
   box-shadow: 0 7px 30px rgba(62, 9, 11, 0.3);
 
@@ -58,7 +58,7 @@ Leaderboard
   }
   .leaderboard{
       width: 80%;
-      
+   
   }
 }
 @media screen and (max-width: 600px){
@@ -68,6 +68,8 @@ Leaderboard
     .leaderboard{
         width: 90%;
     }
+
+
 }
 .leaderboard h1 {
     display: inline-block;
@@ -163,6 +165,11 @@ transform: scale(1.2);
 
 }
 
+@media (max-width:790px){
+  .inside-leaderboard-points{
+    grid-template-columns: 40% 10% 10% 10% 30%;
+  }
+}
 
 
 .leaderboard ol li::after {
@@ -257,10 +264,10 @@ transform: scale(1.2);
 }
 
 .leaderboard ol li:nth-child(6) {
-  background: #ffb429;
+  background: #ffb62e;
   border-radius: 0 0 10px 10px;
 }
-.dropdown-list-6 {
+.dropdown-list-5 {
   visibility: hidden;
   position: absolute;
 }
@@ -268,9 +275,41 @@ transform: scale(1.2);
 .leaderboard ol li:nth-child(6)::after {
 background: #ffa500;
 box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
-border-radius: 0 0 10px 10px;
 }
 .leaderboard ol li:nth-child(6) mark::before, .leaderboard ol li:nth-child(6) mark::after {
+top: -9px;
+bottom: auto;
+border-top: none;
+border-bottom: 8px solid #d18800;
+}
+
+.leaderboard ol li:nth-child(7)::after {
+background: #ffa500;
+box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+border-radius: 0 0 10px 10px;
+}
+.leaderboard ol li:nth-child(7) mark::before, .leaderboard ol li:nth-child(7) mark::after {
+top: -9px;
+bottom: auto;
+border-top: none;
+border-bottom: 8px solid #d18800;
+}
+
+.leaderboard ol li:nth-child(7) {
+  background: #ffb938;
+  border-radius: 0 0 10px 10px;
+}
+.dropdown-list-6 {
+  visibility: hidden;
+  position: absolute;
+}
+
+.leaderboard ol li:nth-child(7)::after {
+background: #ffa500;
+box-shadow: 0 -2.5px 0 rgba(0, 0, 0, 0.12);
+border-radius: 0 0 10px 10px;
+}
+.leaderboard ol li:nth-child(7) mark::before, .leaderboard ol li:nth-child(6) mark::after {
 top: -9px;
 bottom: auto;
 border-top: none;
