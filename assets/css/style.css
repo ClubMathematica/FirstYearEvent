@@ -151,6 +151,19 @@ h6 {
     text-transform: uppercase;
     margin: 10px;
 }
+
+.cm-logo-1{
+    display: none;
+}
+
+@media(max-width:760px){
+    .rhapsody-logo{
+        display: none;
+    }
+    .cm-logo-1{
+        display: block;
+    }
+}
 @media(max-width:990px){
 .cm-icon{
     position: relative;
@@ -161,8 +174,9 @@ h6 {
         position: relative;
         left: 65vw;
     }
-
 }
+
+
 
 }
 
